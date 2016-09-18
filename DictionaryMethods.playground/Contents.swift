@@ -72,7 +72,7 @@ if var films = movies["The Fast and the Furious"] {
 }
 
 if let fastMovies = movies["The Fast and the Furious"] {
-    for (index, film) in fastMovies.enumerate() {
+    for (index, film) in fastMovies.enumerated() {
         print("\(index + 1). \(film)")
     }
 }
@@ -89,11 +89,11 @@ if let fast3rFilms = movies["The Fast and the Furious"] {
     print("YAY! no more Fast & Furious movies!")
 }
 
-movies.removeValueForKey("The Fast and the Furious")
 
 
 
-// COUNTING ITEMS
+
+// COUNTING ITEMS IN A DICTIONARY
 
 let planetsAndTheirMoons = [
     "Mercury": 0,
@@ -132,7 +132,7 @@ if emptyDictionary.isEmpty {
 
 
 
-// RETRIEVING KEYS
+// RETRIEVING KEYS IN A DICTIONARY
 
 let planetNames = Array(planetsAndTheirMoons.keys)
 
@@ -142,10 +142,12 @@ for planet in planetsAndTheirMoons.keys {
 
 
 
-// RETRIEVING VALUES
+// RETRIEVING VALUES IN A DICTIONARY
 
 let allTheMoons = Array(planetsAndTheirMoons.values)
 
 for numberOfMoons in planetsAndTheirMoons.values {
     print(numberOfMoons)
 }
+
+
